@@ -26,8 +26,22 @@ namespace NewYearFireworks
 |(_,_)     |   | |  | \ `'   / \  `-'    /|  '  /\  `  | \ `""/  \  ) / |  | \ `'   /|  | \ `'   / 
 |   |      |   | |  |  \    /   \       / |    /  \    |  '. \_/``"".'  |  |  \    / |  |  \    /  
 '---'      '---' ''-'   `'-'     `'-..-'  `---'    `---`    '-----'    ''-'   `'-'  `--'   `'-'   
+                              ______________                               
+2024                    ,===:'.,            `-._                           
+                             `:.`---.__         `-._                       
+                               `:.     `--.         `.                     
+                                 \.        `.         `.                   
+                         (,,(,    \.         `.   ____,-`.,                
+                      (,'     `/   \.   ,--.___`.'                         
+                  ,  ,'  ,--.  `,   \.;'         `                         
+                   `{D, {    \  :    \;                                    
+                     V,,'    /  /    //                                    
+                     j;;    /  ,' ,-//.    ,---.      ,                    
+                     \;'   /  ,' /  _  \  /  _  \   ,'/                    
+                           \   `'  / \  `'  / \  `.' /                     
+                            `.___,'   `.__,'   `.__,'  
 (C) 2023 Luu Thai Hung. All rights reserved.                                                                                                  
-This game renders multiple fireworks
+This game renders multiple fireworks!
 (UP/DOWN: MOVE)
 (ENTER: SELECT)";
             string[] Options = new string[] { "Play", "Credit", "Exit" };
@@ -48,19 +62,19 @@ This game renders multiple fireworks
         }
         private void Exit()
         {
-            Console.WriteLine("Good bye");
+            Console.WriteLine("Goodbye!");
         }
         private void Credits()
         {
             Console.Clear();
             string Credits = @"
-V<<----[[CREDIT]]---->>V  V<<<-----[[DESCRIPTION]]----->>>V
-|      |        |      |  |        |             |        |
-^______^________^______^  ^________^_____________^________^
-|Creator: Luu Thai Hung|  |This game is made to celebrate |
-|Date: 12/29/2023      |  |new year. It generates multiple|
-|Version: 1.1          |  |firewoks with different colors.|
-|______________________|  |_______________________________|
+V<<----[[CREDIT]]---->>V  V<<<-----[[DESCRIPTION]]----->>>V V<<<-----[[HAPPYNEWYEAR]]----->>>V
+|      |        |      |  |        |             |        | |        |              |        |
+^______^________^______^  ^________^_____________^________^ ^________^______________^________^
+|Creator: Luu Thai Hung|  |This game is made to celebrate | |I hope you will have a great new|
+|Date: 12/29/2023      |  |new year. It generates multiple| |year. Wish you and your family a|
+|Version: 1.1          |  |firewoks with different colors.| |happy year. Love you all!       |
+|______________________|  |_______________________________| |________________________________|
 ";
             Console.WriteLine(Credits);
             Console.WriteLine("Press any key to go back to Main Menu");
@@ -233,7 +247,7 @@ V<<----[[CREDIT]]---->>V  V<<<-----[[DESCRIPTION]]----->>>V
                 }
                 Firework fw = new Firework(Board, randomX, randomY, colornum);
                 fw.BeginFiring();
-                Thread.Sleep(random.Next(1000, 2000));
+                Thread.Sleep(random.Next(500, 1500));
             }
         }
         private void Begin()
