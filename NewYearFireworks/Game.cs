@@ -247,7 +247,8 @@ V<<----[[CREDIT]]---->>V  V<<<-----[[DESCRIPTION]]----->>>V V<<<-----[[HAPPYNEWY
                 }
                 Firework fw = new Firework(Board, randomX, randomY, colornum);
                 fw.BeginFiring();
-                Thread.Sleep(random.Next(500, 1500));
+                //Thread.Sleep(random.Next(500, 1500));
+                Thread.Sleep(500);
             }
         }
         private void Begin()
